@@ -1,0 +1,33 @@
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama:/root/.ollama
+      - ./entrypoint.sh:/entrypoint.sh
+    # Configure for multi-model use
+    environment:
+      - OLLAMA_MAX_LOADED_MODELS=2
+      - OLLAMA_NUM_PARALLEL=2
+      - OLLAMA_KEEP_ALIVE=-1 
+
+    restart: unless-stopped
+    entrypoint: ["/usr/bin/bash", "/entrypoint.sh"]
+
+  open-webui:
+    image: ghcr.io/open-webui/open-webui:main
+    container_name: open-webui
+    ports:
+      - "3000:8080"
+    volumes:
+      - open-webui:/app/backend/data
+    environment:
+      - OLLAMA_BASE_URL=http://ollama:11434
+    restart: unless-stopped
+
+volumes:
+  ollama:
+  open-webui:
+
