@@ -18,7 +18,7 @@ git clone https://github.com/svirmi/ollama-open-webui.git
 cd ollama-open-webui 
 ```
 ```
-docker compose up -d
+docker compose up --build
 ```
 
 3. **Verify Installation**
@@ -45,4 +45,5 @@ docker compose down --volumes --rmi all
 ## 🌐 Access the Web UI
 1. Open browser to `http://localhost:3000`
 2. Create admin account
-3. Start chatting!
+3. Select **both** models at the top-left corner
+4. Start chatting
