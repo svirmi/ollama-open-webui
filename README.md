@@ -1,5 +1,10 @@
 # deepseek-r1:8b and llama4:scout running together
 Dockerized Open-WebUI Ollama setup to run two (and more) models simultaneously
+
+
+![Demo](./demo/demo.gif)
+
+
 Entrypoint script downloads deepseek-r1:8b and llama4:scout models automatically
 
 ## 📋 Prerequisites
