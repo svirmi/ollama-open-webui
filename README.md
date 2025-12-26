@@ -16,8 +16,11 @@ git clone https://github.com/svirmi/ollama-open-webui.git
 2. **Start Services**
 ```bash
 cd ollama-open-webui 
+```
+```
 docker compose up -d
 ```
+
 3. **Verify Installation**
 ```bash
 docker compose ps
