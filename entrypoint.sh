@@ -11,8 +11,8 @@ sleep 5
 echo "🔴 Retrieving deepseek-r1:8b..."
 ollama pull deepseek-r1:8b
 
-echo "🔴 Retrieving llama4:scout (67GB - this may take a while)..."
-ollama pull llama4:scout
+echo "🔴 Retrieving alibayram/erurollm-9b-instruct ..."
+ollama pull alibayram/erurollm-9b-instruct
 
 echo "🟢 Both models are ready!"
 
