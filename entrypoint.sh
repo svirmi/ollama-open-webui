@@ -8,10 +8,10 @@ pid=$!
 # Wait for server to wake up
 sleep 5
 
-echo "🔴 Retrieving deepseek-r1:8b..."
-ollama pull deepseek-r1:8b
+echo "🔴 Retrieving llama4:scout ..."
+ollama pull llama4:scout
 
-echo "🔴 Retrieving alibayram/erurollm-9b-instruct ..."
+echo "🔴 Retrieving erurollm-9b-instruct ..."
 ollama pull alibayram/erurollm-9b-instruct
 
 echo "🟢 Both models are ready!"
