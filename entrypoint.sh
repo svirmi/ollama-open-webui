@@ -8,8 +8,8 @@ pid=$!
 # Wait for server to wake up
 sleep 5
 
-echo "🔴 Retrieving llama4:scout ..."
-ollama pull llama4:scout
+echo "🔴 Retrieving estllm-prototype ..."
+ollama pull hf.co/Mixa/estllm-prototype-Q5_K_M.gguf:Q5_K_M
 
 echo "🔴 Retrieving erurollm-9b-instruct ..."
 ollama pull alibayram/erurollm-9b-instruct
