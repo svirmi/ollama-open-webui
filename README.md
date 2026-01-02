@@ -4,8 +4,7 @@ Dockerized Open-WebUI Ollama setup to run two (and more) models simultaneously
 
 ![Demo](./demo/demo.gif)
 
-
-Entrypoint script downloads deepseek-r1:8b and llama4:scout models automatically
+Entrypoint script downloads and runs two models automatically
 
 ## 📋 Prerequisites
 - Docker Engine v20.10.10+
